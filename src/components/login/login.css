@@ -1,0 +1,19 @@
+h1{
+    padding-top: 130px;
+}
+form{
+    margin:auto;
+    background-color: aquamarine;
+    width: 25%;
+    height: 250px;
+    
+}
+
+input{
+display: block;
+margin: auto;
+}
+
+.btn{
+    cursor: pointer;
+}
