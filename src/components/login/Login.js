@@ -5,6 +5,7 @@ const Login = () => {
 
 const [username , setUserName]= useState('')
 const [password , setPassword]= useState('')
+const [msg , setMsg] = useState('')
 
 const user={
   username:"admin",
@@ -14,10 +15,10 @@ const user={
 
 function login(){
 if(username===user.username && password===user.password){
-  console.log("success")
+ setMsg("user Found")
 }
 else
-{ console.log("user name or password invalide");
+{ setMsg("user name or password invalide");
   }
 }
 
@@ -31,7 +32,7 @@ else
             <input type="button" value="login" className='btn' onClick={login} />
             <input type="submit" value="register" className='btn'/>
             </form>
-
+<p>{msg}</p>
     </div>
   )
 }
